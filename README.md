@@ -8,10 +8,21 @@ A few of the projects that I have worked on my own with interesting code pieces:
 
 Act normal was my first experiment with multiplayer: The idea was to achieve a mini version of the multiplayer PvP for Assassin's Creed: Revelations; where each player had a random different "skin", but in the field there were a bunch of NPCs with the same skins, so the gist was to hunt down another player without killing an NPC, while being hunted. Although the technical multiplayer side was achieved, I had some blockers getting a few game design aspects together, and also the character design was a challenge (Its still using placeholders). The project is on hold, although I would like to retake it again at some point.
 
+Discleamer: The placerholders are mostly... ehm... "already owned" sprites. So keep that in mind.
+
+<details>
+  
+  <summary>Screenshot</summary>
+  
+  ![alt text](https://github.com/EmilianoCenizo/public-code-porfolio/blob/master/img/an_screenshot_1.png "Act Normal screenshot 1")    
+  
+</details>
+
 I developed a small NodeJS server whose only work is to send events in UDP. These events were coded in the clients (the Unity games), and included for example movement, actions and even game events like "game started" or "player left".
 
 The client's behavior system design - although developed by me as well - was taken from some tutorials and code snippets online (so it wasn't 100% my idea). 
 The connection opens a websocket for most in-game messages (sent with a "type"), but the most "noisy" information exchanges (like the position and rotation of "Observables" - NPCs and other players) are handled by USP. It also lets parties communicate with specific UDP messages. The messages are in JSON.
+
 
 Interesting code pieces:
 
@@ -56,6 +67,21 @@ Spawns the players in the running client.
 # **_Omega Gateway_**
 
 Omega Gateway is the most structured game project - process wise -  I have worked so far. The game itself tries to emulate the 90s 4x sci fi games like Master of Orion 2; where you have a grid that represents galactic sectors, and there could be a system. Each system may have a player owned colony ("city"), and there they can play around city production attributes (food, industry, science, etc). Players can also build units (Ships) that can move around the map with certain restrictions. I'm still working on this project. 
+
+<details>
+  <summary>Screenshot 1 - Galaxy Map</summary>
+  
+  ![alt text](https://github.com/EmilianoCenizo/public-code-porfolio/blob/master/img/ow_screenshot_1.png "Omega Gateway - Map screenshot")    
+  
+</details>
+
+<details>
+  <summary>Screenshot 2 - Production screen</summary>
+  
+  ![alt text](https://github.com/EmilianoCenizo/public-code-porfolio/blob/master/img/ow_screenshot_2.png "Omega Gateway - Production screen screenshot")    
+
+</details>
+
 
 Interesting code pieces:
 
